@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts.js"></script>
+    <link rel="icon" href="./image/LaGuemes.png" type="logo/png" />
+    <title>laguemes.cooperativa</title>
+  </head>
+  <body>
+    <header class="header page-nav">
+      <img src="./image/LaGuemes.png" alt="logo" class="logo1" />
+      <h1>
+        <a
+          href="https://www.instagram.com/laguemes.cooperativa/"
+          target="_blank"
+          >La Guemes Cooperativa</a
+        >
+      </h1>
+      <button id="checkout" class="button-checkout" onclick="pay()">
+        Pagar
+      </button>
+    </header>
+    <div class="page-content">
+      <div class="product-container">
+        <h3>Costura</h3>
+        <img src="./image/costura1.jpg" />
+        <h2>$500</h2>
+        <button class="button-add" onclick="add('product-1',500)">
+          Agregar
+        </button>
+      </div>
+      <div class="product-container">
+        <h3>Carpintería</h3>
+        <img src="./image/capinteria1.jpg" />
+        <h2>$1000</h2>
+        <button class="button-add" onclick="add('product-2',1000)">
+          Agregar
+        </button>
+      </div>
+      <div class="product-container">
+        <h3>Vivero</h3>
+        <img src="./image/vivero1.jpg" />
+        <h2>$250</h2>
+        <button class="button-add" onclick="add('product-3',250)">
+          Agregar
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

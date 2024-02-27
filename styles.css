@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+head {
+  display: none;
+}
+:root {
+  --color1: #e0c2c0;
+  --color2: #dbb0a0;
+  --color3: #eab586;
+  --color4: #b2481b;
+  --color5: #57394a;
+}
+body {
+  margin: 0;
+  font-family: "Crimson Pro", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  background-color: var(--color1);
+  color: var(--color5);
+}
+button {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 10px 25px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--color2);
+  border-bottom: 3px solid var(--color5);
+}
+@keyframes rotation {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotatey(359deg);
+  }
+}
+.logo1 {
+  width: 15vw;
+  margin: 15px;
+  border-radius: 100%;
+  animation: rotation 3s infinite linear;
+}
+.page-nav h1 a {
+  margin: 20px;
+  color: var(--color5);
+}
+.button-checkout {
+  background-color: var(--color4);
+  color: var(--color3);
+  border: 2px solid var(--color3);
+  transition-duration: 0.4s;
+}
+.button-checkout:hover {
+  background-color: var(--color3);
+  color: var(--color4);
+  border: 2px solid var(--color4);
+}
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 1px solid var(--color3);
+}
+.product-container {
+  color: var(--color4);
+  margin: 15px;
+  padding: 8px 16px;
+  position: relative;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+  background-color: var(--color2);
+  border: 1.5px solid var(--color5);
+  border-radius: 4px;
+}
+.product-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+.product-container h3 {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.product-container img {
+  width: 200px;
+  border-radius: 8px;
+}
+.product-container h2 {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.button-add {
+  background-color: var(--color5);
+  color: var(--color1);
+  border: 2px solid var(--color1);
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.button-add:hover {
+  background-color: var(--color1);
+  color: var(--color5);
+  border: 2px solid var(--color5);
+}
